@@ -780,7 +780,8 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   .about-us .found-list ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 408px);
-    gap: 30px 40px;
+    gap: 40px 82px;
+    margin: 0 auto;
   }
   .about-us .found-list ul li {
     font-family: BookmanOldStyle;
