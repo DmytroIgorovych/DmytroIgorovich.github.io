@@ -827,7 +827,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   .about-us .found-list ul {
     display: grid;
     grid-template-columns: minmax(350px, 408px) minmax(350px, 408px) minmax(350px, 408px);
-    grid-template-rows: minmax(350px, 446px) minmax(350px, 446px) minmax(350px, 446px);
+    grid-template-rows: minmax(350px, 446px) minmax(350px, 446px);
     gap: 40px 82px;
     margin: 0 auto;
   }
