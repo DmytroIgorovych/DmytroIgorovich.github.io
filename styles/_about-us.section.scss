@@ -97,7 +97,7 @@
 
 @media (min-width:841px) {
     .about-us{
-        padding: 48px 0 64px 0;
+        padding: 60px 0 75px 0;
         b{
             font-size: 18px;
             font-weight: bold;
@@ -109,9 +109,59 @@
         .found-list{
             ul{
                 display: grid;
-                grid-template-columns: repeat(auto-fill, 270px);            
-                gap: 30px 40px;
+                grid-template-columns: repeat(auto-fill, 220px);            
+                gap: 30px 30px;
+                margin: 0 auto;
                 
+                li{
+                    font-family: BookmanOldStyle;
+                    font-size: 20px;
+                    line-height: 130%;
+                    padding-bottom: 25px;
+                    min-height: 190px;
+                    &:nth-child(1){
+                        background: url('../images/icons/calendar\ 1.svg') center 25px / 100px 100px no-repeat;
+                    }
+                    &:nth-child(2){
+                        background: url('../images/icons/open-book\ 1.svg') center 25px / 100px 100px no-repeat;
+                    }
+                    &:nth-child(3){
+                        background: url('../images/icons/female\ 1.svg') center 25px / 100px 100px no-repeat;
+                    }
+                    &:nth-child(4){
+                        background: url('../images/icons/graduating-student\ 1.svg') center 25px / 100px 100px no-repeat;
+                    }
+                    &:nth-child(5){
+                        background: url('../images/icons/success\ 1.svg') center 25px / 100px 100px no-repeat;
+                        min-height: 200px;
+                    }
+                    &:nth-child(6){
+                        background: url('../images/icons/handshake\ 1.svg') center 25px / 100px 100px no-repeat;
+                        min-height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1010px){
+    .about-us{
+        padding: 70px 0 85px 0;
+        b{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 30px;
+            margin-top: -15px;
+        }
+        .found-list{
+            ul{
+                display: grid;
+                grid-template-columns: 270px 270px 270px;            
+                gap: 50px 65px;
+                margin: 0 auto;
                 li{
                     font-family: BookmanOldStyle;
                     font-size: 22px;
@@ -142,8 +192,6 @@
             }
         }
     }
-
-
 }
 
 @media (min-width:1440px) {
@@ -164,7 +212,8 @@
         .found-list{
             ul{
                 display: grid;
-                grid-template-columns: repeat(auto-fill, 408px);            
+                grid-template-columns: minmax(350px, 408px) minmax(350px, 408px) minmax(350px, 408px);   
+                grid-template-rows: minmax(350px, 446px) minmax(350px, 446px) minmax(350px, 446px);         
                 gap: 40px 82px;
                 margin: 0 auto;
                 li{
