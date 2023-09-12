@@ -1,0 +1,52 @@
+$backgroundPrimary: #DF803E;
+$textColorPrimary: #000;
+
+
+body {  
+    font-family: BookmanOldStyle;
+    color: $textColorPrimary;
+}
+
+h1{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 34px; 
+}
+
+h4{
+    font-size: 20px;
+}
+
+.container {
+    // border: 1px solid #000;
+    min-width: 324px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 50px;
+}
+
+@media (min-width: 841px) {
+    .container{
+        max-width: 1980px;
+        padding: 0 60px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1980px;
+        padding: 0 108px;
+        width: auto;
+    }
+    
+}

@@ -1,0 +1,260 @@
+.direction-works{
+    padding: 48px 20px 64px 20px;
+    background: 
+            url("../images/pict.png") bottom -110px right -33px / 159px 224px no-repeat,  
+            url("../images/pict.png") bottom -140px left -33px / 159px 224px no-repeat,
+            $backgroundPrimary;
+    b{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 24px;
+    }
+    h2{
+        margin-top: 24px;
+        margin-bottom: 27px;
+        margin: 24px 65px 27px 65px;
+        font-size: 24px;
+        text-align: center;
+    }
+    ol{ 
+        counter-reset: numbers;
+        
+        li{
+            font-family: Roboto;
+            padding: 20px 0;
+            position: relative;
+            padding-left: 50px;
+            border-bottom: 1px solid black;
+            &:first-child{
+                border-top: 1px solid black;
+            }
+            &::before{
+                counter-increment: numbers;
+                content: '0'counter(numbers);
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 38px;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: BookmanOldStyle;  
+                font-size: 16px;          
+            }
+        }
+    }
+    button{
+        display: flex;
+        border: 1px solid black;
+        background-color: $backgroundPrimary;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 24px;
+        font-size: 14px;
+        font-family: Roboto;
+        color: black;
+    }
+}
+
+
+.overlay{
+    position: fixed;
+    background-color: #00000081;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &.active{
+        display: flex;
+    }
+    .content{
+        background-color: #fff;
+        border-radius: 50px;
+        max-width: 550px;
+        width: 90%;
+        min-height: 300px;
+        form{
+            margin: 60px 30px;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        input{
+            padding: 0;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border: none;
+            border-bottom: 2px solid black;
+            width: 100%;
+            font-family: BookmanOldStyle;
+            color: #5C5C5C;
+        }
+        #submit{
+            border: none;
+            padding: 15px 35px;
+            border-radius: 10px;
+            margin: 0 auto;
+            background-color: $backgroundPrimary;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            color: black;
+        }
+    }
+}
+
+@media (min-width: 481px) {
+    
+    .direction-works{
+        padding: 58px 33px 74px 33px;
+        background: 
+            url("../images/pict.png") bottom 150px right 33px /180px 300px no-repeat, 
+            url("../images/pict.png") bottom 80px left /180px 300px no-repeat content-box,
+            $backgroundPrimary;
+        b{
+            font-size: 15px;
+        }
+        h2{
+            font-size: 28px;
+        }
+        ol{ 
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+    
+    
+    .overlay{
+        .content{
+            width: 50%;
+            h3{
+                font-size: 28px;
+            }
+            input{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (min-width:841px) {
+    .direction-works{
+        background: url("../images/pict.png") bottom 205px right 60px/180px 300px no-repeat, url("../images/pict.png") bottom 140px left 60px/180px 300px no-repeat content-box, #DF803E;
+        padding: 48px 0 64px 0;
+        b{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 30px;
+            margin-top: -15px;
+        }
+        
+        .found-list{
+            ol{ 
+                min-width: 55%;
+                counter-reset: numbers;
+                margin: 0 auto;
+                li{
+                    font-size: 22px;
+                    position: relative;
+                    padding: 20px 0;
+                    padding-left: 55px;
+                    border-bottom: 1px solid black;
+                    
+                }
+            }
+        }
+        button{
+            display: flex;
+            border: 1px solid black;
+            background-color: $backgroundPrimary;
+            padding: 15px 35px;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-top: 70px;
+            font-size: 20px;
+            font-family: BookmanOldStyle;
+        }
+    }
+
+}
+
+@media (min-width:990px){
+    .direction-works{
+        .found-list{
+            ol{
+                min-width: 60%;
+            }
+        } 
+    }
+}
+
+@media (min-width:1440px) {
+    .direction-works{
+        padding: 0;
+        .container{
+            padding: 112px 120px;
+        }
+        max-height: 1300px;
+        background: 
+            url("../images/pict.png") bottom 273px right 120px/419px 590px no-repeat,  
+            url("../images/pict.png") bottom 273px left 120px / 419px 590px no-repeat,
+            $backgroundPrimary;
+        b{
+            font-size: 26px;
+        }
+        h2{
+            font-size: 50px;
+            margin-top: -20px;
+            margin-bottom: 64px;
+        }
+        .found-list{
+            ol{ 
+                min-width: 824px;
+                counter-reset: numbers;
+                li{
+                    max-width: 824px;
+                    padding: 27px 0 31px 110px;
+                    font-size: 34px;
+                    border-bottom: 1px solid black;
+                    &:first-child{
+                        border-top: 1px solid black;
+                    }
+                    &::before{
+                        counter-increment: numbers;
+                        content: '0'counter(numbers);
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        border: 2px solid black;
+                        border-radius: 50%;
+                        width: 66px;
+                        height: 66px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: Roboto;  
+                        font-size: 34px;          
+                    }
+                }
+            }
+        }
+        button{
+            font-size: 26px;
+        }
+    }
+}

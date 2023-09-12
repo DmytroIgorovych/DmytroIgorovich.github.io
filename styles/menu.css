@@ -1,0 +1,22 @@
+nav {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.burger_btns {
+  display: flex;
+  justify-content: space-between;
+}
+.burger_btns .logo {
+  text-decoration: none;
+  color: #000;
+}
+.burger_btns .open-menu {
+  width: 48px;
+  height: 48px;
+  border: 1px solid red;
+  background: url("../images/icons/burger.svg") center center no-repeat content-box;
+}/*# sourceMappingURL=menu.css.map */

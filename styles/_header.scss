@@ -1,0 +1,197 @@
+header{
+    min-height: 640px;
+    background: 
+        url('../images/pict.png') center bottom 75px / 140px 195px no-repeat,
+        url('../images/icons/Polygon\ 2.png') center top 390px /720px 500px no-repeat content-box,
+        $backgroundPrimary;
+    
+    .header-top{
+        border-bottom: 1px solid white;
+    }
+    .header-bottom{
+        padding: 0 18px;
+        h1{
+            font-size: 52px;
+            padding-top: 32px;
+            margin-bottom: 11px;    
+        }
+        p{
+            font-size: 30px;
+            margin-bottom: 13px;
+            // max-width: 320px;
+        }
+        button{
+            display: block;
+            border: none;
+            background-color: #fff;
+            color: #000;
+            padding: 10px 16px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+    }
+    
+    .burger_btns{
+        a{
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        & + nav,
+        &.active + nav{
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                color: #000;
+            }
+        } 
+    }
+    
+}
+
+@media (min-width:481px) {
+    header{
+        min-height: 500px;
+        background: 
+        url("../images/pict.png") top 94px right 33px/235px 345px no-repeat, url("../images/icons/Polygon 2-1.png") top right/369px 500px no-repeat content-box, $backgroundPrimary;
+        
+        .header-bottom{
+            padding: 0 33px;
+            h1{
+                font-size: 55px;
+            }
+            p{
+                max-width: 63%;
+            }
+            button{
+                display: inline;
+                margin-top: 30px;
+                font-family: BookmanOldStyle;
+            }
+        }
+        
+        .burger_btns{
+            a{
+                font-size: 36px;
+            }
+    
+            & + nav,
+            &.active + nav{
+                a{
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: #000;
+                }
+            } 
+        }
+        
+    }
+}
+
+@media (min-width:841px) {
+    header{
+        min-height: 675px;
+        background: 
+        url("../images/pict.png") top 132px right 60px/305px 450px no-repeat, 
+        url("../images/icons/Polygon 2-1.png") top right/500px 675px no-repeat content-box, #DF803E;
+        
+        .header-top{
+            padding-top: 20px;
+        }        
+        .header-bottom{
+            padding: 0 60px;
+            h1{
+                font-size: 65px;
+                padding-top: 55px;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 35px;
+                max-width: 63%;
+                margin-bottom: 60px;
+                margin-top: 0;
+                line-height: 130%;
+            }
+            button{
+                display: inline;
+                font-size: 20px;
+                margin-top: 30px;
+                font-family: BookmanOldStyle;
+                padding: 15px 25px;
+            }
+        }
+        
+        .burger_btns{
+            a{
+                font-size: 36px;
+                width:auto ;
+            }
+    
+            & + nav,
+            &.active + nav{
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: #000;
+                }
+            } 
+        }
+        
+    }
+}
+
+@media (min-width:1100px) {
+    header{
+        min-height: 675px;
+
+        .burger_btns{
+            a{
+                font-size: 36px;
+            }
+    
+            & + nav,
+            &.active + nav{
+                a{
+                    text-decoration: none;
+                    font-size: 19px;
+                    color: #000;
+                }
+            } 
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    header{
+        background: 
+        url("../images/pict.png") top 205px right 108px/539px 761px no-repeat, 
+        url("../images/icons/Polygon 2-1.png") top right/916px 1080px no-repeat content-box, #DF803E;
+        height: 1080px;
+        .header-bottom{
+            padding: 0 108px;
+            h1{
+                margin-top: 154px;
+                padding: 0;
+                font-size: 90px;
+            }
+            p{
+                margin-top: 24px; 
+                font-size: 50px;  
+                max-width: 916px;            
+            }
+            button{
+                font-size: 26px;
+            }
+        }        
+        
+        .burger_btns{   
+            & + nav{
+                a{
+                    text-decoration: none;
+                    font-size: 26px;
+                    color: #000;
+                }
+            } 
+        }
+    }
+}
