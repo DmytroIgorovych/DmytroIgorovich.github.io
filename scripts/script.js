@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btnMobileMenuOpen.addEventListener("click", function() {
         burger_btns.classList.add('active')
-        header-top.classList.add('active')
+        header-top.classList.add('active') 
         // btnMobileMenuOpen.style.display = 'none';
         // btnMobileMenuClose.style.display = 'block';
         // menu.style.display = 'block';
@@ -99,6 +99,13 @@ document.addEventListener('DOMContentLoaded', function() {
     new formRequest(document.querySelector('form'))
 
     
-    // $('.your-class').slick()
     
 })
+
+$('.your-class').slick({
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    slidesToScroll: 1
+  })

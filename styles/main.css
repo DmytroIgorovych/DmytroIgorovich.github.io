@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: "BookmanOldStyle";
@@ -535,7 +536,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
 @media (min-width: 841px) {
   .direction-works {
     background: url("../images/pict.png") bottom 225px right 60px/180px 300px no-repeat, url("../images/pict.png") bottom 140px left 60px/180px 300px no-repeat content-box, #DF803E;
-    padding: 70px 20px 85px 20px;
+    padding: 70px 0 85px 0;
   }
   .direction-works b {
     font-size: 18px;
@@ -858,5 +859,181 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   .about-us .found-list ul li:nth-child(6) {
     background: url("../images/icons/handshake 1.svg") center 35px/206px 206px no-repeat;
     min-height: 340px;
+  }
+}
+@media (min-width: 841px) {
+  .study .container {
+    padding: 70px 60px 85px 60px;
+  }
+  .study b {
+    font-size: 18px;
+    font-family: BookmanOldStyle;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 72px;
+  }
+  .study .languageStudy {
+    padding-bottom: 100px;
+    background: url("../images/фото.jpg") top right/55% 80% no-repeat;
+  }
+  .study .languageStudy h2 {
+    margin-bottom: 64px;
+    font-size: 30px;
+  }
+  .study .languageStudy ul {
+    font-size: 34px;
+    font-family: BookmanOldStyle;
+    counter-reset: numbers;
+  }
+  .study .languageStudy ul li {
+    font-size: 22px;
+    margin-bottom: 62px;
+    position: relative;
+    padding-left: 65px;
+  }
+  .study .languageStudy ul li::before {
+    counter-increment: numbers;
+    content: "0" counter(numbers);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BookmanOldStyle;
+    font-size: 26px;
+  }
+  .study .courseFormat h2 {
+    text-align: center;
+    margin-bottom: 64px;
+    font-size: 30px;
+  }
+  .study .courseFormat ul {
+    font-family: BookmanOldStyle;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 15px;
+    counter-reset: numbers;
+  }
+  .study .courseFormat ul li {
+    font-size: 22px;
+    margin-bottom: 62px;
+    position: relative;
+    padding-left: 65px;
+  }
+  .study .courseFormat ul li p {
+    font-size: 20px;
+  }
+  .study .courseFormat ul li h3 {
+    font-size: 28px;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .study .courseFormat ul li h3::before {
+    counter-increment: numbers;
+    content: "0" counter(numbers);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BookmanOldStyle;
+    font-size: 26px;
+  }
+}
+@media (min-width: 1440px) {
+  .study .container {
+    padding: 112px 120px;
+  }
+  .study b {
+    font-size: 26px;
+    font-family: BookmanOldStyle;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 72px;
+  }
+  .study .languageStudy {
+    padding-bottom: 182px;
+    background: url("../images/фото.jpg") top right/100% 100% no-repeat;
+  }
+  .study .languageStudy h2 {
+    margin-bottom: 64px;
+  }
+  .study .languageStudy ul {
+    font-size: 34px;
+    font-family: BookmanOldStyle;
+    counter-reset: numbers;
+  }
+  .study .languageStudy ul li {
+    margin-bottom: 62px;
+    position: relative;
+    padding-left: 86px;
+  }
+  .study .languageStudy ul li::before {
+    counter-increment: numbers;
+    content: "0" counter(numbers);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BookmanOldStyle;
+    font-size: 34px;
+  }
+  .study .courseFormat h2 {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  .study .courseFormat ul {
+    font-family: BookmanOldStyle;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 105px;
+    counter-reset: numbers;
+  }
+  .study .courseFormat ul li {
+    font-size: 26px;
+    margin-bottom: 62px;
+    position: relative;
+    padding-left: 86px;
+  }
+  .study .courseFormat ul li p {
+    font-size: 26px;
+  }
+  .study .courseFormat ul li h3 {
+    align-items: center;
+    margin: 20px 0;
+  }
+  .study .courseFormat ul li h3::before {
+    counter-increment: numbers;
+    content: "0" counter(numbers);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: BookmanOldStyle;
+    font-size: 34px;
   }
 }
