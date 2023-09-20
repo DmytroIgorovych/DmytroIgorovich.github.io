@@ -7,7 +7,7 @@
 // "\2192" outputs ascii character "→"
 // "\2022" outputs ascii character "•"
 
-$slick-font-path: "../../fonts" !default;
+$slick-font-path: "../../images/icons/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
@@ -63,13 +63,14 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev,
 .slick-next {
     position: absolute;
+    z-index: 1;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
-    background: red;
+    background: transparent;
     color: transparent;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -80,7 +81,7 @@ $slick-opacity-not-active: 0.25 !default;
     outline: none;
     &:hover, &:focus {
         outline: none;
-        background: blue;
+        background: transparent;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
@@ -101,7 +102,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: -25px;
+    left: 0;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -109,9 +110,9 @@ $slick-opacity-not-active: 0.25 !default;
     &:before {
         content: '';
         display: block;
-        background-image: url(../../images/icons/Button-Left.svg);
-        width: 50px;
-        height: 50px;
+        background-image: url(../../../images/icons/Button\ Left.svg);
+        width: 80px;
+        height: 80px;
         background-size: 100%;
         [dir="rtl"] & {
             content: $slick-next-character;
@@ -120,7 +121,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-    right: -25px;
+    right: 0;
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -128,9 +129,9 @@ $slick-opacity-not-active: 0.25 !default;
     &:before {
         content: '';
         display: block;
-        background-image: url(../../images/icons/Button-Left.svg);
-        width: 50px;
-        height: 50px;
+        background-image: url(../../../images/icons/Button\ Right.svg);
+        width: 80px;
+        height: 80px;
         background-size: 100%;
         [dir="rtl"] & {
             content: $slick-prev-character;
@@ -203,8 +204,13 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
+// .slick-track{
+//     margin: 0 50px;
+// }
+
 .slick-center{
-    background-color: pink;
     transform: scale(1.2);
 }
+
+
 

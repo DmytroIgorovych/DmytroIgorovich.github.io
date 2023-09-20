@@ -650,7 +650,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   font-family: Roboto;
   font-size: 14px;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   text-align: center;
   padding-bottom: 16px;
   min-height: 115px;
@@ -1117,5 +1117,97 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     grid-column-end: 13;
     grid-row-start: 9;
     grid-row-end: 11;
+  }
+}
+@media (min-width: 841px) {
+  .ourTeam {
+    background-color: #DF803E;
+  }
+  .ourTeam .container {
+    padding: 70px 60px 120px 60px;
+  }
+  .ourTeam .container .ourTeam-slider {
+    margin-top: 64px;
+    padding: 0 100px;
+    height: 100%;
+  }
+  .ourTeam .container .ourTeam-slider .slide1 {
+    border-radius: 20px;
+    background-color: white;
+    margin: 60px 30px;
+  }
+  .ourTeam .container .ourTeam-slider .slide1 img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .ourTeam .container .ourTeam-slider .slide1 h3 {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .ourTeam .container .ourTeam-slider .slide1 p {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 30px;
+  }
+  .ourTeam .container b {
+    font-size: 18px;
+    font-family: BookmanOldStyle;
+    font-weight: bold;
+    display: block;
+    margin-bottom: -15px;
+    color: white;
+  }
+  .ourTeam .container h2 {
+    font-family: BookmanOldStyle;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+}
+@media (min-width: 841px) {
+  .reviews .container {
+    padding: 70px 60px 120px 60px;
+  }
+  .reviews .container .slick-prev:before {
+    background-image: url(../images/icons/Button-Left.svg);
+  }
+  .reviews .container .slick-next:before {
+    background-image: url(../images/icons/Button-Right2.svg);
+  }
+  .reviews .container b {
+    font-size: 18px;
+    font-family: BookmanOldStyle;
+    font-weight: bold;
+    display: block;
+    margin-bottom: -15px;
+    color: #000000;
+  }
+  .reviews .container h2 {
+    font-family: BookmanOldStyle;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  .reviews .container .review {
+    background-color: #DF803E;
+    border-radius: 20px;
+    margin: 0 175px;
+    width: 80%;
+  }
+  .reviews .container .review h3 {
+    font-size: 25px;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 71px;
+  }
+  .reviews .container .review h3 span {
+    font-size: 17px;
+  }
+  .reviews .container .review p {
+    font-size: 19px;
+    padding: 5px 68px 40px 70px;
   }
 }

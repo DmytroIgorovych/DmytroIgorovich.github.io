@@ -1,0 +1,57 @@
+
+
+
+@media (min-width:841px) {
+    .reviews{
+        .container{
+            padding: 70px 60px 120px 60px;
+            .slick-prev {
+                
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Left.svg);
+                }
+            }
+            .slick-next {
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Right2.svg);
+                }
+            }
+            b{
+                font-size: 18px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: -15px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 38px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                margin: 0 175px;
+                width: 80%;
+
+                h3{
+                    font-size: 25px;
+                    padding-top: 40px;
+                    padding-left: 70px;
+                    padding-right: 71px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+                p{
+                    font-size: 19px;
+                    padding: 5px 68px 40px 70px;
+                }
+            }
+        }
+    }
+}
