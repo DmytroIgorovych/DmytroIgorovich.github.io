@@ -3,8 +3,9 @@
 
 @media (min-width:841px) {
     .ourTrips{
+        padding: 0;
         .container{
-            padding: 70px 60px 85px 60px;
+            padding: 0 60px 85px 60px;
             b{
                 font-size: 18px;
                 font-family: BookmanOldStyle;
@@ -16,7 +17,7 @@
         .aroundWorld{
             h2{
                 font-family: BookmanOldStyle;
-                font-size: 30px;
+                font-size: 35px;
                 text-align: center;
                 margin-bottom: 38px;
             }
@@ -84,6 +85,45 @@
                 grid-column-end: 13;
                 grid-row-start: 9;
                 grid-row-end: 11;
+            }
+        }
+        
+    }
+}
+
+@media (min-width:1010px){
+    .ourTrips{
+        b{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 40px;
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    .ourTrips{
+        .container{
+            padding: 112px 120px
+            b{
+                font-size: 26px;
+            }
+        }
+        .aroundWorld{
+            h2{
+                font-size: 50px;
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+        .gallery{
+            
+            
+            img{
+                
             }
         }
         

@@ -114,18 +114,20 @@
         }
         .languageStudy{
             padding-bottom: 182px;
-            background: url("../images/фото.jpg") top right / 100% 100% no-repeat;
+            background: url("../images/фото.jpg") top right / 60% 85% no-repeat;
             h2{
                 margin-bottom: 64px;
+                font-size: 1.8vw;
             }
             ul{
                 font-size: 34px;
                 font-family: BookmanOldStyle;
                 counter-reset: numbers;
                 li{
-                    margin-bottom: 62px;
+                    margin-bottom: 70px;
                     position: relative;
                     padding-left: 86px;
+                    font-size: 1.4vw;
                     &::before{
                         counter-increment: numbers;
                         content: '0'counter(numbers);
@@ -141,7 +143,7 @@
                         justify-content: center;
                         align-items: center;
                         font-family: BookmanOldStyle;  
-                        font-size: 34px;          
+                        font-size: 1.4vw;;          
                     }
                 }
             }
@@ -163,11 +165,12 @@
                     position: relative;
                     padding-left: 86px;
                     p{
-                        font-size: 26px;
+                        font-size: 1.4vw;
                     }
                     h3{
                         align-items: center;
                         margin: 20px 0;
+                        font-size: 1.8vw;
                         &::before{
                             counter-increment: numbers;
                             content: '0'counter(numbers);

@@ -152,19 +152,19 @@
 
 @media (min-width:841px) {
     .direction-works{
-        background: url("../images/pict.png") bottom 225px right 60px/180px 300px no-repeat, url("../images/pict.png") bottom 140px left 60px/180px 300px no-repeat content-box, #DF803E;
+        background: url("../images/pict.png") bottom 140px right 60px/20% 45% no-repeat content-box, url("../images/pict.png") bottom 140px left 60px/20% 45% no-repeat content-box, $backgroundPrimary;
         padding: 70px 0 85px 0;
         b{
             font-size: 18px;
         }
         h2{
-            font-size: 30px;
+            font-size: 35px;
             margin-top: -15px;
         }
         
         .found-list{
             ol{ 
-                min-width: 55%;
+                min-width: 50%;
                 counter-reset: numbers;
                 margin: 0 auto;
                 li{
@@ -194,9 +194,17 @@
 
 @media (min-width:990px){
     .direction-works{
+        b{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        h2{
+            margin-top: -15px;
+            font-size: 35px;
+        }
         .found-list{
             ol{
-                min-width: 60%;
+                min-width: 50%;
             }
         } 
     }
@@ -210,8 +218,8 @@
         }
         max-height: 1300px;
         background: 
-            url("../images/pict.png") bottom 273px right 120px/419px 590px no-repeat,  
-            url("../images/pict.png") bottom 273px left 120px / 419px 590px no-repeat,
+            url("../images/pict.png") bottom 273px right 120px/20% 35% no-repeat,  
+            url("../images/pict.png") bottom 273px left 120px /20% 35% no-repeat,
             $backgroundPrimary;
         b{
             font-size: 26px;
@@ -223,12 +231,12 @@
         }
         .found-list{
             ol{ 
-                min-width: 824px;
+                min-width: 50%;
                 counter-reset: numbers;
                 li{
                     max-width: 824px;
                     padding: 27px 0 31px 110px;
-                    font-size: 34px;
+                    font-size: 1.8vw;
                     border-bottom: 1px solid black;
                     &:first-child{
                         border-top: 1px solid black;
