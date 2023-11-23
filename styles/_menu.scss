@@ -82,7 +82,17 @@
     };
 }
 
-@media (min-width:841px) {
+@media (min-width: 840px) {
+    .burger_btns{
+    
+        & + nav{
+            background: url('../images/pict.png') right 33px top 94px /235px 345px no-repeat;
+            padding-bottom: 115px;
+        } 
+    };
+}
+
+@media (min-width:1024px) {
     .burger_btns{
         display: none;
         .logo {
