@@ -1508,7 +1508,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     background-color: white;
     padding: 17px 0 21px 0;
     margin: 0 5px;
-    min-height: 258px;
+    min-height: 298px;
   }
   .ourTeam .container .ourTeam-slider .slide1 img {
     width: 37%;
