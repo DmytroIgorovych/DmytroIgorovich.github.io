@@ -1,0 +1,209 @@
+*{
+    font-family: BookmanOldStyle;
+}
+
+@media (max-width:480px) {
+    .reviews{
+        .container{
+            padding: 48px 20px 158px 20px; 
+            .slick-prev {
+                margin-top: 30px;
+                top: 110%;
+                width: 64px;
+                height: 64px;
+                &:before {
+                    background-image: url(../images/icons/Button-Left.svg);
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            .slick-next {
+                margin-top: 30px;
+                top: 110%;
+                width: 64px;
+                height: 64px;
+                &:before {
+                    background-image: url(../images/icons/Button-Right2.svg);
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            b{
+                font-size: 14px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 24px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                width: 90%;
+                padding: 16px 16px 40px 16px;
+                
+                h3{
+                    font-size: 20px;
+                    background: url(../images/pict.svg) no-repeat;
+                    background-position: top right -110px;
+                    background-size: 100% 100%;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:841px) {
+    .reviews{
+        .container{
+            padding: 70px 60px 120px 60px;
+            .slick-prev {
+                
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Left.svg);
+                }
+            }
+            .slick-next {
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Right2.svg);
+                }
+            }
+            b{
+                font-size: 18px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: -15px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 38px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                margin: 0 175px;
+                width: 80%;
+                padding: 48px 71px 46px 80px;
+                h3{
+                    font-size: 25px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+                p{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:1400px) {
+    .reviews{
+        .container{
+            padding: 70px 120px 120px 120px;
+            .slick-prev {
+                
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Left.svg);
+                }
+            }
+            .slick-next {
+                &:before {
+                    
+                    background-image: url(../images/icons/Button-Right2.svg);
+                }
+            }
+            b{
+                font-size: 18px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: -15px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 38px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                margin: 0 175px;
+                width: 80%;
+                padding: 48px 71px 46px 80px;
+                h3{
+                    font-size: 25px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+                p{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1680px) {
+    .reviews{
+        .container{
+            padding: 70px 120px 120px 120px;
+            
+            b{
+                font-size: 26px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: -15px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 50px;
+                text-align: center;
+                margin-bottom: 38px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                margin: 0 175px;
+                width: 80%;
+                padding: 48px 71px 46px 80px;
+                h3{
+                    font-size: 34px;
+                    span {
+                        font-size: 26px;
+                    }
+                }
+                p{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
