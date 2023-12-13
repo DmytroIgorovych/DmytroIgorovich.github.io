@@ -1,11 +1,11 @@
 @media (max-width:480px) {
     .study{
+        font-family: BookmanOldStyle;
         .container{
             padding: 48px 20px 40px 20px;
         }
         b{
             font-size: 14px;
-            font-family: BookmanOldStyle;
             font-weight: bold;
             display: block;
             margin-bottom: 24px;;
@@ -18,7 +18,6 @@
             }
             ul{
                 font-size: 34px;
-                font-family: BookmanOldStyle;
                 counter-reset: numbers;
                 li{
                     font-size: 20px;
@@ -39,23 +38,114 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-family: BookmanOldStyle;  
                         font-size: 20px;          
                     }
                 }
             }
         }
         .courseFormat{
-            background: url("../images/фото.jpg") bottom center / 100% 40% no-repeat;
+            background: url("../images/фото.jpg") bottom center / 100% 35% no-repeat;
             h2{
                 text-align: center;
                 margin-bottom: 20px;
                 font-size: 24px;
             }
             ul{
-                font-family: BookmanOldStyle;
                 display: grid;
-                padding-bottom: 300px;
+                padding-bottom: 250px;
+                grid-template-columns: 1fr;
+                gap: 16px 0;
+                counter-reset: numbers;
+                li{
+                    font-size: 20px;
+                    position: relative;
+                    padding-left: 46px;
+                    p{
+                        font-size: 16px;
+                    }
+                    h3{
+                        font-size: 20px;
+                        align-items: center;
+                        margin: 7.5px 0;
+                        &::before{
+                            counter-increment: numbers;
+                            content: '0'counter(numbers);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border: 2px solid black;
+                            border-radius: 50%;
+                            width: 35px;
+                            height: 35px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+@media (min-width:481px) {
+    .study{
+        .container{
+            padding: 48px 33px 40px 33px;
+        }
+        b{
+            font-size: 14px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 24px;;
+        }
+        .languageStudy{
+            padding-bottom: 40px;
+            h2{
+                margin-bottom: 24px;
+                font-size: 24px;
+            }
+            ul{
+                font-size: 34px;
+                counter-reset: numbers;
+                li{
+                    font-size: 20px;
+                    margin-bottom: 31px;
+                    position: relative;
+                    padding-left: 46px;
+                    &::before{
+                        counter-increment: numbers;
+                        content: '0'counter(numbers);
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        border: 2px solid black;
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;          
+                    }
+                }
+            }
+        }
+        .courseFormat{
+            background: url("../images/фото.jpg") bottom center / 100% 40vw no-repeat content-box;
+            h2{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+            ul{
+                display: grid;
+                padding-bottom: 45vw;
                 grid-template-columns: 1fr;
                 gap: 15px 0;
                 counter-reset: numbers;
@@ -83,7 +173,6 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-family: BookmanOldStyle;  
                         }
                     }
                 }
@@ -96,7 +185,6 @@
 
 }
 
-
 @media (min-width:841px) {
     .study{
         .container{
@@ -104,7 +192,6 @@
         }
         b{
             font-size: 18px;
-            font-family: BookmanOldStyle;
             font-weight: bold;
             display: block;
             margin-bottom: 72px;
@@ -118,7 +205,6 @@
             }
             ul{
                 font-size: 34px;
-                font-family: BookmanOldStyle;
                 counter-reset: numbers;
                 li{
                     font-size: 22px;
@@ -139,7 +225,6 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-family: BookmanOldStyle;  
                         font-size: 26px;          
                     }
                 }
@@ -152,7 +237,6 @@
                 font-size: 30px;
             }
             ul{
-                font-family: BookmanOldStyle;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 0 15px;
@@ -182,7 +266,6 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-family: BookmanOldStyle;  
                             font-size: 26px;          
                         }
                     }
@@ -203,7 +286,6 @@
         }
         b{
             font-size: 26px;
-            font-family: BookmanOldStyle;
             font-weight: bold;
             display: block;
             margin-bottom: 72px;
@@ -217,7 +299,6 @@
             }
             ul{
                 font-size: 34px;
-                font-family: BookmanOldStyle;
                 counter-reset: numbers;
                 li{
                     margin-bottom: 70px;
@@ -238,7 +319,6 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-family: BookmanOldStyle;  
                         font-size: 1.4vw;;          
                     }
                 }
@@ -250,7 +330,6 @@
                 margin-bottom: 64px;
             }
             ul{
-                font-family: BookmanOldStyle;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 0 105px;
@@ -281,7 +360,6 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-family: BookmanOldStyle;  
                             font-size: 34px;          
                         }
                     }

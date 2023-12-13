@@ -49,9 +49,74 @@
                 padding: 16px 16px 40px 16px;
                 
                 h3{
+                    display: block;
                     font-size: 20px;
                     background: url(../images/pict.svg) no-repeat;
-                    background-position: top right -110px;
+                    background-position: center;
+                    background-size: 100% 100%;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:481px) {
+    .reviews{
+        .container{
+            padding: 48px 33px 158px 33px; 
+            .slick-prev {
+                margin-top: 30px;
+                top: 110%;
+                width: 64px;
+                height: 64px;
+                &:before {
+                    background-image: url(../images/icons/Button-Left.svg);
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            .slick-next {
+                margin-top: 30px;
+                top: 110%;
+                width: 64px;
+                height: 64px;
+                &:before {
+                    background-image: url(../images/icons/Button-Right2.svg);
+                    width: 64px;
+                    height: 64px;
+                }
+            }
+            b{
+                font-size: 14px;
+                font-family: BookmanOldStyle;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 24px;
+                color: #000000;
+            }
+            h2{
+                font-family: BookmanOldStyle;
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+            .review{
+                background-color: $backgroundPrimary;
+                border-radius: 20px;
+                width: 90%;
+                padding: 16px 16px 40px 16px;
+                
+                h3{
+                    display: block;
+                    font-size: 20px;
+                    background: url(../images/pict.svg) no-repeat;
+                    background-position: center;
                     background-size: 100% 100%;
                     span{
                         font-size: 16px;

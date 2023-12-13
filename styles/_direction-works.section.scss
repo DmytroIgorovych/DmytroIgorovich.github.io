@@ -121,8 +121,8 @@
     .direction-works{
         padding: 58px 33px 74px 33px;
         background: 
-            url("../images/pict.svg") bottom 150px right 33px /180px 300px no-repeat, 
-            url("../images/pict.svg") bottom 80px left /180px 300px no-repeat content-box,
+            url("../images/pict.svg") bottom calc(100vw - 650px) right 33px /180px 300px no-repeat, 
+            url("../images/pict.svg") bottom calc(100vw - 650px) left 33px /180px 300px no-repeat,
             $backgroundPrimary;
         b{
             font-size: 15px;
@@ -158,8 +158,8 @@
             font-size: 18px;
         }
         h2{
-            font-size: 35px;
-            margin-top: -15px;
+            font-size: 33px;
+            margin-top: 15px;
         }
         
         .found-list{

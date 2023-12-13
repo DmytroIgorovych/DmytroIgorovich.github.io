@@ -85,7 +85,92 @@
     }
 }
 
+@media (min-width:481px) {
+    .ourTeam{
+        background-color: $backgroundPrimary;
+        font-family: BookmanOldStyle;
+        .container{
+            padding: 48px 0 154px 0;
+            .ourTeam-slider{
+                padding: 0;
+                .slick-list{
+                    padding: 0 50px !important;
+                }
+                .slick-prev {
+                    top: 110%;
+                    width: 64px;
+                    height: 64px;
+                    color: white;
+                    margin: 24px 0 0 20px;
+                    &:before {
+                        background-image: url(../images/icons/Button\ Left.svg);
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                .slick-next {
+                    top: 110%;
+                    width: 64px;
+                    height: 64px;
+                    margin: 24px 20px 0 0;
+                    &:before {
+                        background-image: url(../images/icons/Button\ Right.svg);
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
+                .slide1{
+                    border-radius: 10px;
+                    background-color: white;
+                    padding: 17px 0 21px 0;
+                    margin: 0 5px;
+                    min-height: 298px;
+                    img{
+                        width: 45%;
+                        margin: 0 auto 8px auto;
+                        border-top-right-radius: 5px;
+                        border-top-left-radius: 5px;
+                    }
+                    h3{
+                        border-bottom: 1px solid #DE742B;
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 20px;
+                        text-align: center;
+                        padding-bottom: 8px;
+                    }
+                    p{
+                        font-family: Roboto;
+                        font-size: 16px;
+                        text-align: center;
+                        margin-top: 8px;
+                        span{
+                            display: block;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
 
+            b{
+                font-size: 14px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 24px;
+                margin-left: 20px;
+                color: white;
+            }
+            h2{
+                
+                font-size: 24px;
+                text-align: center;
+                margin: 0;
+                display: block;
+                margin-bottom: 27px;
+            } 
+        }
+    }
+}
 
 @media (min-width:841px) {
     .ourTeam{

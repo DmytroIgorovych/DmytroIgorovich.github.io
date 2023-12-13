@@ -102,12 +102,12 @@ $('.ourTeam-slider').slick({
     slidesToShow: 3,
     responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 841,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+        arrows: true,
+        centerMode: false,
+        centerPadding: '50px',
+        slidesToShow: 1
       }
     },
     {

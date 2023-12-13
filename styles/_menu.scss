@@ -5,6 +5,7 @@
     align-items: center;
     border-bottom: 1px solid white;
     position: relative;
+    
 
     .logo {
         text-decoration: none;
@@ -17,8 +18,8 @@
         width: 48px;
         height: 48px;
         border: none;
-        background: url('../images/icons/burger.svg') center center  no-repeat content-box;
-        margin: 16px 20px 8px 0;
+        background: url('../images/icons/burger.svg') center right no-repeat content-box;
+        margin: 16px 0 8px 0;
     }
 
     &.active {
