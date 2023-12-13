@@ -79,7 +79,6 @@
                 grid-column-end: 5;
                 grid-row-start: 11;
                 grid-row-end: 14;
-                // align-self: flex-end;
             } 
         }
         
@@ -289,7 +288,11 @@
                 font-size: 50px;
             }
             p{
-                font-size: 22px;
+                font-size: 26px;
+                span{
+                    display: block;
+                    height: 50px;
+                }
             }
         }
         // .gallery{

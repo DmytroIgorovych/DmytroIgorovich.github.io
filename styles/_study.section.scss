@@ -197,8 +197,9 @@
             margin-bottom: 72px;
         }
         .languageStudy{
-            padding-bottom: 100px;
-            background: url("../images/фото.jpg") top right/55% 80% no-repeat;
+            padding-bottom: 50px;
+            margin-bottom: 64px;
+            background: url("../images/фото.jpg") top right/55% 100% no-repeat;
             h2{
                 margin-bottom: 64px;
                 font-size: 30px;
@@ -231,19 +232,19 @@
             }
         }
         .courseFormat{
+            background-image: none;
             h2{
                 text-align: center;
                 margin-bottom: 64px;
                 font-size: 30px;
             }
             ul{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
                 gap: 0 15px;
-                counter-reset: numbers;
+                padding-bottom: 0;
                 li{
                     font-size: 22px;
-                    margin-bottom: 62px;
+                    margin-bottom: 0;
                     position: relative;
                     padding-left: 65px;
                     p{
@@ -292,19 +293,18 @@
         }
         .languageStudy{
             padding-bottom: 182px;
-            background: url("../images/фото.jpg") top right / 60% 85% no-repeat;
+            background: url("../images/фото.jpg") top right / 55% 85% no-repeat;
             h2{
                 margin-bottom: 64px;
-                font-size: 1.8vw;
+                font-size: 50px;
             }
             ul{
-                font-size: 34px;
                 counter-reset: numbers;
                 li{
+                    font-size: 34px;
                     margin-bottom: 70px;
                     position: relative;
                     padding-left: 86px;
-                    font-size: 1.4vw;
                     &::before{
                         counter-increment: numbers;
                         content: '0'counter(numbers);
@@ -319,7 +319,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        font-size: 1.4vw;;          
+                        font-size: 34px;
                     }
                 }
             }
@@ -328,6 +328,7 @@
             h2{
                 text-align: center;
                 margin-bottom: 64px;
+                font-size: 50px;
             }
             ul{
                 display: grid;
@@ -340,12 +341,12 @@
                     position: relative;
                     padding-left: 86px;
                     p{
-                        font-size: 1.4vw;
+                        font-size: 26px;
                     }
                     h3{
                         align-items: center;
                         margin: 20px 0;
-                        font-size: 1.8vw;
+                        font-size: 34px;
                         &::before{
                             counter-increment: numbers;
                             content: '0'counter(numbers);

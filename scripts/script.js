@@ -98,24 +98,33 @@ document.addEventListener('DOMContentLoaded', function() {
 $('.ourTeam-slider').slick({
     infinite: true,
     centerMode: true,
-    centerPadding: '0px',
+    centerPadding: '0',
     slidesToShow: 3,
     responsive: [
     {
-      breakpoint: 841,
+        breakpoint: 1440,
+        settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 3
+        }
+        },
+    {
+      breakpoint: 1024,
       settings: {
         arrows: true,
         centerMode: false,
-        centerPadding: '50px',
-        slidesToShow: 1
+        centerPadding: '60px',
+        slidesToShow: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 660,
       settings: {
         arrows: true,
         centerMode: false,
-        centerPadding: '48px',
+        centerPadding: '45px',
         slidesToShow: 1
       }
     }

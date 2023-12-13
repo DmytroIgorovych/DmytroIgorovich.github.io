@@ -80,7 +80,6 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            // justify-content: space-between;
             vertical-align: middle;
             a{
                 text-decoration: none;
@@ -194,14 +193,17 @@
 @media (min-width: 1440px) {
     footer{
         .container{
-            padding: 112px 120px
+            padding: 112px 120px;
+            flex-direction: row;
         }
         .contacts-footer{
+            flex-direction: row;
             p{
                 font-size: 18px;
             }
         }
         .social{
+            position: relative;
             p{
                 font-size: 18px;
             }
@@ -212,12 +214,19 @@
 @media (min-width: 1680px) {
     footer{
         .container{
-            padding: 112px 120px
+            padding: 112px 120px;
+            a{
+                font-size: 42px;
+            }
         }
         .contacts-footer{
             column-gap: 120px;
             p{
                 font-size: 18px;
+                span{
+                    display: block;
+                    height: 16px;
+                }
             }
         }
         .social{

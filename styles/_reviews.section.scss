@@ -188,16 +188,23 @@
         .container{
             padding: 70px 120px 120px 120px;
             .slick-prev {
-                
+                top: 50%;
+                width: 106px;
+                height: 106px;
                 &:before {
-                    
                     background-image: url(../images/icons/Button-Left.svg);
+                    width: 106px;
+                    height: 106px;
                 }
             }
             .slick-next {
+                top: 50%;
+                width: 106px;
+                height: 106px;
                 &:before {
-                    
                     background-image: url(../images/icons/Button-Right2.svg);
+                    width: 106px;
+                    height: 106px;
                 }
             }
             b{
