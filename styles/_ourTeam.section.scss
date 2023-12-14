@@ -1,4 +1,4 @@
-@media (max-width:480px) {
+@media (min-width:360px) {
     .ourTeam{
         background-color: $backgroundPrimary;
         font-family: BookmanOldStyle;
@@ -74,7 +74,6 @@
                 color: white;
             }
             h2{
-                
                 font-size: 24px;
                 text-align: center;
                 margin: 0;
@@ -87,99 +86,28 @@
 
 @media (min-width:481px) {
     .ourTeam{
-        background-color: $backgroundPrimary;
-        font-family: BookmanOldStyle;
+        
         .container{
-            padding: 48px 0 154px 0;
             .ourTeam-slider{
-                padding: 0;
-                .slick-list{
-                    padding: 0 50px;
-                }
-                .slick-prev {
-                    top: 110%;
-                    width: 64px;
-                    height: 64px;
-                    color: white;
-                    margin: 24px 0 0 20px;
-                    &:before {
-                        background-image: url(../images/icons/Button\ Left.svg);
-                        width: 64px;
-                        height: 64px;
-                    }
-                }
-                .slick-next {
-                    top: 110%;
-                    width: 64px;
-                    height: 64px;
-                    margin: 24px 20px 0 0;
-                    &:before {
-                        background-image: url(../images/icons/Button\ Right.svg);
-                        width: 64px;
-                        height: 64px;
-                    }
-                }
                 .slide1{
-                    border-radius: 10px;
-                    background-color: white;
                     padding: 17px 15px 21px 15px;
-                    margin: 0 5px;
                     min-height: 330px;
                     img{
                         width: 45%;
-                        margin: 0 auto 8px auto;
-                        border-top-right-radius: 5px;
-                        border-top-left-radius: 5px;
-                    }
-                    h3{
-                        border-bottom: 1px solid #DE742B;
-                        width: 80%;
-                        margin: 0 auto;
-                        font-size: 20px;
-                        text-align: center;
-                        padding-bottom: 8px;
-                    }
-                    p{
-                        font-family: Roboto;
-                        font-size: 16px;
-                        text-align: center;
-                        margin-top: 8px;
-                        span{
-                            display: block;
-                            height: 8px;
-                        }
                     }
                 }
             }
-
-            b{
-                font-size: 14px;
-                font-weight: bold;
-                display: block;
-                margin-bottom: 24px;
-                margin-left: 20px;
-                color: white;
-            }
-            h2{
-                font-size: 24px;
-                text-align: center;
-                margin: 0;
-                display: block;
-                margin-bottom: 27px;
-            } 
         }
     }
 }
 
 @media (min-width:841px) {
     .ourTeam{
-        background-color: $backgroundPrimary;
         .container{
             padding: 70px 60px 120px 60px;
             .ourTeam-slider{
                 margin-top: 64px;
                 padding: 0 80px;
-                // height: 90vw;
                 .slick-list{
                     padding: 0;
                 }
@@ -187,7 +115,6 @@
                     top: 50%;
                     width: 80px;
                     height: 80px;
-                    color: white;
                     margin: 0;
                     &:before {
                         width: 80px;
@@ -206,7 +133,6 @@
                 }
                 .slide1{
                     border-radius: 20px;
-                    background-color: white;
                     margin: 0 10px;
                     padding: 0;
                     img{
@@ -221,7 +147,6 @@
                     }
                     p{
                         font-size: 22px;
-                        text-align: center;
                         margin-top: 18px;
                         margin-bottom: 30px;
                     }
@@ -230,21 +155,14 @@
 
             b{
                 font-size: 18px;
-                font-family: BookmanOldStyle;
-                font-weight: bold;
-                display: block;
-                margin-bottom: -15px;
+                margin-bottom: -5px;
                 margin-right: 15px;
                 margin-left: 0;
-                color: white;
             }
             h2{
-                font-family: BookmanOldStyle;
-                font-size: 3vw;
-                text-align: center;
+                font-size: 30px;
                 margin-left: 105px;
                 margin-bottom: 38px;
-                display: block;
             } 
         }
     }
@@ -254,10 +172,6 @@
     .ourTeam{
         .container{
             .ourTeam-slider{
-                padding: 0 80px;
-                .slick-list{
-                    padding: 0;
-                }
                 .slide1{
                     margin: 75px 25px;
                     h3{
@@ -269,6 +183,12 @@
                     }
                 }
             }
+            b{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 35px;
+            }
         }
     }
 }
@@ -276,11 +196,9 @@
 @media (min-width:1440px) {
     .ourTeam{
         .container{
+            padding: 70px 120px 120px 120px;
             .ourTeam-slider{
                 padding: 0 106px;
-                .slick-list{
-                    padding: 0;
-                }
                 .slick-prev {
                     width: 106px;
                     height: 106px;
@@ -304,6 +222,12 @@
                     }
                 }
             }
+            b{
+                font-size: 22px;
+            }
+            h2{
+                font-size: 40px;
+            }
         }
     }
 }
@@ -316,25 +240,6 @@
                 max-height: min-content;
                 margin-top: 64px;
                 padding: 0 100px;
-                .slick-prev {
-                    width: 106px;
-                    height: 106px;
-                    color: white;
-                    margin: 0;
-                    &:before {
-                        width: 106px;
-                        height: 106px;
-                    }
-                }
-                .slick-next {
-                    width: 106px;
-                    height: 106px;
-                    margin:  0;
-                    &:before {
-                        width: 106px;
-                        height: 106px;
-                    }
-                }
                 .slide1{
                     margin: 115px 40px;
                     h3{

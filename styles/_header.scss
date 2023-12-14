@@ -104,12 +104,12 @@ header{
         .header-bottom{
             padding: 0 60px;
             h1{
-                font-size: 75px;
+                font-size: 54px;
                 padding-top: 50px;
                 margin-bottom: 20px;
             }
             p{
-                font-size: 40px;
+                font-size: 30px;
                 max-width: 60%;
                 margin-bottom: 35px;
                 margin-top: 0;
@@ -150,9 +150,19 @@ header{
         min-height: 675px;
         background: url(../images/фото.png) top 125px right 60px/27% 70% no-repeat content-box, url(../images/icons/Polygon\ 2-1.png) top right/45% 100% no-repeat content-box, #DF803E;
         .header-top{
-            padding: 20px 60px 0 60px;
+            padding: 20px 60px 8px 60px;
+            display: flex;
+            justify-content: space-between;
         }  
         .header-bottom{
+            h1{
+                font-size: 63px;
+                padding-top: 95px;
+            }
+            p{
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
             button{
                 font-size: 18px;
                 padding: 15px 25px;
@@ -167,7 +177,7 @@ header{
             &.active + nav{
                 a{
                     text-decoration: none;
-                    font-size: 19px;
+                    font-size: 18px;
                     color: #000;
                 }
             } 
@@ -178,10 +188,10 @@ header{
 @media (min-width:1440px) {
     header{
         background: 
-        url("../images/pict.svg") top 190px right 80px/29% 64% no-repeat,  
+        url("../images/pict.svg") top 170px right 80px/29% 66% no-repeat,  
         url("../images/icons/Polygon 2-1.png") top right/45% 100% no-repeat content-box, #DF803E;
         .header-top{
-            padding: 20px 110px 0 98px;
+            padding: 20px 110px 10px 98px;
             nav{
                 column-gap: 13px;
             }
@@ -189,14 +199,15 @@ header{
         .header-bottom{
             padding: 0 105px 0 98px;
             h1{
-                margin-top: 140px;
+                margin-top: 110px;
                 padding: 0;
-                font-size: 5vw;
+                font-size: 72px;
             }
             p{
                 margin-top: 24px; 
-                font-size: 2.9vw;  
-                max-width: 60%;            
+                font-size: 40px;  
+                max-width: 60%;
+                margin-bottom: 80px;          
             }
             button{
                 font-size: 26px;
@@ -209,7 +220,7 @@ header{
             & + nav{
                 a{
                     text-decoration: none;
-                    font-size: 26px;
+                    font-size: 24px;
                     color: #000;
                 }
             } 
@@ -223,14 +234,14 @@ header{
         url("../images/pict.svg") top 226px right 90px/27% 62% no-repeat,  
         url("../images/icons/Polygon 2-1.png") top right/40% 100% no-repeat content-box, #DF803E;
         .header-top{
-            padding: 20px 120px 0 108px;
+            padding: 20px 120px 10px 108px;
         }
         .header-bottom{
             padding: 0 115px 0 108px;
             h1{
                 margin-top: 154px;
                 padding: 0;
-                font-size: 5vw;
+                font-size: 90px;
             }
             p{
                 margin-top: 24px; 

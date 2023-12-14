@@ -1,7 +1,7 @@
 .about-us{
     padding: 48px 20px 64px 20px;
     b{
-        font-family: Roboto;
+        font-family: BookmanOldStyle;
         font-size: 14px;
         color: #DF803E;
     }
@@ -19,7 +19,7 @@
             justify-content: center;
             li{
                 display: flex;
-                font-family: Roboto;
+                font-family: BookmanOldStyle;
                 font-size: 14px;
                 justify-content: center;
                 align-items: flex-end;
@@ -29,23 +29,23 @@
                 border: 1px solid black;
                 border-radius: 10px;
                 &:nth-child(1){
-                    background: url('../images/icons/calendar\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/calendar\ 1.svg') center 13px / 66px 66px no-repeat;
                 }
                 &:nth-child(2){
-                    background: url('../images/icons/open-book\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/open-book\ 1.svg') center 13px / 66px 66px no-repeat;
                 }
                 &:nth-child(3){
-                    background: url('../images/icons/female\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/female\ 1.svg') center 13px / 66px 66px no-repeat;
                 }
                 &:nth-child(4){
-                    background: url('../images/icons/graduating-student\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/graduating-student\ 1.svg') center 13px / 66px 66px no-repeat;
                 }
                 &:nth-child(5){
                     min-height: 130px;
-                    background: url('../images/icons/success\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/success\ 1.svg') center 13px / 66px 66px no-repeat;
                 }
                 &:nth-child(6){
-                    background: url('../images/icons/handshake\ 1.svg') center 13px  / 66px 66px no-repeat;
+                    background: url('../images/icons/handshake\ 1.svg') center 13px / 66px 66px no-repeat;
                     min-height: 130px;
                 }
             }
@@ -68,18 +68,17 @@
                 li{
                     font-size: 18px;
                     min-height: 170px;
-                    background-size: 96px 96px;
                     &:nth-child(1){
-                        background: url('../images/icons/calendar\ 1.svg') center 20px  / 100px 100px no-repeat;
+                        background: url('../images/icons/calendar\ 1.svg') center 20px / 100px 100px no-repeat;
                     }
                     &:nth-child(2){
-                        background: url('../images/icons/open-book\ 1.svg') center 20px  / 100px 100px no-repeat;
+                        background: url('../images/icons/open-book\ 1.svg') center 20px / 100px 100px no-repeat;
                     }
                     &:nth-child(3){
-                        background: url('../images/icons/female\ 1.svg') center 20px  / 100px 100px no-repeat;
+                        background: url('../images/icons/female\ 1.svg') center 20px / 100px 100px no-repeat;
                     }
                     &:nth-child(4){
-                        background: url('../images/icons/graduating-student\ 1.svg') center 20px  / 100px 100px no-repeat;
+                        background: url('../images/icons/graduating-student\ 1.svg') center 20px / 100px 100px no-repeat;
                     }
                     &:nth-child(5){
                         min-height: 180px;
@@ -103,7 +102,7 @@
             font-weight: bold;
         }
         h2{
-            font-size: 33px;
+            font-size: 30px;
             margin-top: -15px;
         }
         .found-list{
@@ -112,7 +111,6 @@
                 grid-template-columns: repeat(auto-fill, 220px);            
                 gap: 30px 30px;
                 margin: 0 auto;
-                
                 li{
                     font-family: BookmanOldStyle;
                     font-size: 20px;
@@ -148,46 +146,44 @@
 @media (min-width:1010px){
     .about-us{
         padding: 70px 0 85px 0;
-        b{
-            font-size: 22px;
-            font-weight: bold;
-        }
-        h2{
-            font-size: 42px;
-            margin-top: -15px;
-        }
-        .found-list{
-            ul{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);        
-                gap: 5% 5%;
-                margin: 0 10%;
-                li{
-                    font-family: BookmanOldStyle;
-                    font-size: 22px;
-                    line-height: 130%;
-                    padding: 35px 0;
-                    min-height: 200px;
-                    &:nth-child(1){
-                        background: url('../images/icons/calendar\ 1.svg') center 35px / 120px 120px no-repeat;
-                    }
-                    &:nth-child(2){
-                        background: url('../images/icons/open-book\ 1.svg') center 35px / 120px 120px no-repeat;
-                    }
-                    &:nth-child(3){
-                        background: url('../images/icons/female\ 1.svg') center 35px / 120px 120px no-repeat;
-                    }
-                    &:nth-child(4){
-                        background: url('../images/icons/graduating-student\ 1.svg') center 35px / 120px 120px no-repeat;
-                    }
-                    &:nth-child(5){
-                        background: url('../images/icons/success\ 1.svg') center 35px / 120px 120px no-repeat;
-                        min-height: 210px;
-                    }
-                    &:nth-child(6){
-                        background: url('../images/icons/handshake\ 1.svg') center 35px / 120px 120px no-repeat;
-                        min-height: 210px;
+        .container{
+            b{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 35px;
+            }
+            .found-list{
+                ul{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);        
+                    gap: 5% 5%;
+                    margin: 0 10%;
+                    li{
+                        font-size: 22px;
+                        padding: 35px 0;
+                        min-height: 200px;
+                        &:nth-child(1){
+                            background: url('../images/icons/calendar\ 1.svg') center 35px / 120px 120px no-repeat;
+                        }
+                        &:nth-child(2){
+                            background: url('../images/icons/open-book\ 1.svg') center 35px / 120px 120px no-repeat;
+                        }
+                        &:nth-child(3){
+                            background: url('../images/icons/female\ 1.svg') center 35px / 120px 120px no-repeat;
+                        }
+                        &:nth-child(4){
+                            background: url('../images/icons/graduating-student\ 1.svg') center 35px / 120px 120px no-repeat;
+                        }
+                        &:nth-child(5){
+                            background: url('../images/icons/success\ 1.svg') center 35px / 120px 120px no-repeat;
+                            min-height: 210px;
+                        }
+                        &:nth-child(6){
+                            background: url('../images/icons/handshake\ 1.svg') center 35px / 120px 120px no-repeat;
+                            min-height: 210px;
+                        }
                     }
                 }
             }
@@ -200,10 +196,60 @@
         padding: 0;
         .container{
             padding: 112px 119px;
-        }
+            b{
+                font-size: 26px;
+            }
+            h2{
+                font-size: 35px;
+                margin-top: -20px;
+                margin-bottom: 64px;
+            }
+            .found-list{
+                ul{
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 5% 5%;
+                    margin: 0 10%;
+                    li{
+                        font-size: 30px;
+                        line-height: 130%;
+                        padding-bottom: 10%;
+                        border-radius: 30px;
+                        &:nth-child(1){
+                            background: url('../images/icons/calendar\ 1.svg') center 35px / 60% 50% no-repeat;
+                        }
+                        &:nth-child(2){
+                            background: url('../images/icons/open-book\ 1.svg') center 35px / 60% 50% no-repeat;
+                        }
+                        &:nth-child(3){
+                            background: url('../images/icons/female\ 1.svg') center 35px / 60% 50% no-repeat;
+                        }
+                        &:nth-child(4){
+                            background: url('../images/icons/graduating-student\ 1.svg') center 35px / 60% 50% no-repeat;
+                        }
+                        &:nth-child(5){
+                            background: url('../images/icons/success\ 1.svg') center 35px / 60% 50% no-repeat;
+                            min-height: 340px;
+                        }
+                        &:nth-child(6){
+                            background: url('../images/icons/handshake\ 1.svg') center 35px / 60% 50% no-repeat;
+                            min-height: 340px;
+                        }
+                    }
+                }
+            }
+    }
+    }
+}
+
+@media (min-width:1680px) {
+    .about-us{
+        padding: 0;
+        .container{
+            padding: 112px 119px;
+        
         b{
             font-size: 26px;
-            font-weight: bold;
         }
         h2{
             font-size: 50px;
@@ -212,16 +258,12 @@
         }
         .found-list{
             ul{
-                display: grid;
-                // grid-template-columns: minmax(300px, 408px) minmax(300px, 408px) minmax(300px, 408px);   
-                // grid-template-rows: minmax(300px, 446px) minmax(300px, 446px);         
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(2, 1fr);
                 gap: 5% 5%;
                 margin: 0 10%;
                 li{
-                    font-family: BookmanOldStyle;
-                    font-size: 1.9vw;
+                    font-size: 30px;
                     line-height: 130%;
                     padding-bottom: 10%;
                     border-radius: 30px;
@@ -248,5 +290,6 @@
                 }
             }
         }
+    }
     }
 }

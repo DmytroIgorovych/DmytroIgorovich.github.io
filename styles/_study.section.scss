@@ -1,4 +1,4 @@
-@media (max-width:480px) {
+@media (min-width:360px) {
     .study{
         font-family: BookmanOldStyle;
         .container{
@@ -98,91 +98,38 @@
             padding: 48px 33px 40px 33px;
         }
         b{
-            font-size: 14px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 24px;;
+            font-size: 16px;
         }
         .languageStudy{
-            padding-bottom: 40px;
             h2{
-                margin-bottom: 24px;
-                font-size: 24px;
+                font-size: 26px;
             }
             ul{
-                font-size: 34px;
-                counter-reset: numbers;
+                font-size: 36px;
                 li{
-                    font-size: 20px;
-                    margin-bottom: 31px;
-                    position: relative;
-                    padding-left: 46px;
-                    &::before{
-                        counter-increment: numbers;
-                        content: '0'counter(numbers);
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%);
-                        border: 2px solid black;
-                        border-radius: 50%;
-                        width: 35px;
-                        height: 35px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 20px;          
-                    }
+                    font-size: 22px;
                 }
             }
         }
         .courseFormat{
-            background: url("../images/фото.jpg") bottom center / 100% 40vw no-repeat content-box;
+            background: url("../images/фото.jpg") bottom center / 100% 40vw no-repeat;
             h2{
-                text-align: center;
-                margin-bottom: 20px;
-                font-size: 24px;
+                font-size: 26px;
             }
             ul{
-                display: grid;
                 padding-bottom: 45vw;
-                grid-template-columns: 1fr;
-                gap: 15px 0;
-                counter-reset: numbers;
                 li{
-                    font-size: 20px;
-                    position: relative;
-                    padding-left: 46px;
+                    font-size: 22px;
                     p{
                         font-size: 16px;
                     }
                     h3{
-                        font-size: 20px;
-                        align-items: center;
-                        margin: 7.5px 0;
-                        &::before{
-                            counter-increment: numbers;
-                            content: '0'counter(numbers);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            border: 2px solid black;
-                            border-radius: 50%;
-                            width: 35px;
-                            height: 35px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
+                        font-size: 22px;
                     }
                 }
             }
         }
-
-
     }
-
-
 }
 
 @media (min-width:841px) {
@@ -192,14 +139,12 @@
         }
         b{
             font-size: 18px;
-            font-weight: bold;
-            display: block;
             margin-bottom: 72px;
         }
         .languageStudy{
             padding-bottom: 50px;
             margin-bottom: 64px;
-            background: url("../images/фото.jpg") top right/55% 100% no-repeat;
+            background: url("../images/фото.jpg") top 30px right/55% 100% no-repeat;
             h2{
                 margin-bottom: 64px;
                 font-size: 30px;
@@ -208,24 +153,12 @@
                 font-size: 34px;
                 counter-reset: numbers;
                 li{
-                    font-size: 22px;
+                    font-size: 24px;
                     margin-bottom: 62px;
-                    position: relative;
                     padding-left: 65px;
                     &::before{
-                        counter-increment: numbers;
-                        content: '0'counter(numbers);
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%);
-                        border: 2px solid black;
-                        border-radius: 50%;
                         width: 50px;
                         height: 50px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
                         font-size: 26px;          
                     }
                 }
@@ -234,7 +167,6 @@
         .courseFormat{
             background-image: none;
             h2{
-                text-align: center;
                 margin-bottom: 64px;
                 font-size: 30px;
             }
@@ -245,39 +177,71 @@
                 li{
                     font-size: 22px;
                     margin-bottom: 0;
-                    position: relative;
                     padding-left: 65px;
                     p{
                         font-size: 20px;
                     }
                     h3{
-                        font-size: 28px;
-                        align-items: center;
-                        margin: 20px 0;
+                        font-size: 26px;
+                        margin: 15px 0;
                         &::before{
-                            counter-increment: numbers;
-                            content: '0'counter(numbers);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            border: 2px solid black;
-                            border-radius: 50%;
                             width: 50px;
                             height: 50px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
                             font-size: 26px;          
                         }
                     }
                 }
             }
         }
-
-
     }
+}
 
-
+@media (min-width:1024px) {
+    .study{
+        .container{
+            padding: 70px 60px 85px 60px;
+            b{
+                font-size: 20px;
+                margin-bottom: 72px;
+            }
+            .languageStudy{
+                background: url("../images/фото.jpg") top 35px right/55% 100% no-repeat;
+                h2{
+                    font-size: 35px;
+                }
+                ul{
+                    font-size: 36px;
+                    li{
+                        font-size: 28px;
+                        &::before{
+                            font-size: 28px;          
+                        }
+                    }
+                }
+            }
+            .courseFormat{
+                background-image: none;
+                h2{
+                    font-size: 35px;
+                }
+                ul{
+                    li{
+                        font-size: 26px;
+                        p{
+                            font-size: 22px;
+                        }
+                        h3{
+                            margin: 15px 0;
+                            font-size: 28px;
+                            &::before{
+                                font-size: 28px;          
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width:1440px) {
@@ -287,38 +251,22 @@
         }
         b{
             font-size: 26px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 72px;
         }
         .languageStudy{
             padding-bottom: 182px;
-            background: url("../images/фото.jpg") top right / 55% 85% no-repeat;
+            background: url("../images/фото.jpg") top 45px right / 55% 85% no-repeat;
             h2{
                 margin-bottom: 64px;
                 font-size: 50px;
             }
             ul{
-                counter-reset: numbers;
                 li{
                     font-size: 34px;
                     margin-bottom: 70px;
-                    position: relative;
                     padding-left: 86px;
                     &::before{
-                        counter-increment: numbers;
-                        content: '0'counter(numbers);
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%);
-                        border: 2px solid black;
-                        border-radius: 50%;
-                        width: 66px;
-                        height: 66px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        width: 63px;
+                        height: 63px;
                         font-size: 34px;
                     }
                 }
@@ -326,41 +274,24 @@
         }
         .courseFormat{
             h2{
-                text-align: center;
                 margin-bottom: 64px;
                 font-size: 50px;
             }
             ul{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
                 gap: 0 105px;
-                counter-reset: numbers;
                 li{
                     font-size: 26px;
                     margin-bottom: 62px;
-                    position: relative;
                     padding-left: 86px;
                     p{
                         font-size: 26px;
                     }
                     h3{
-                        align-items: center;
                         margin: 20px 0;
                         font-size: 34px;
                         &::before{
-                            counter-increment: numbers;
-                            content: '0'counter(numbers);
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            // transform: translateY(-50%);
-                            border: 2px solid black;
-                            border-radius: 50%;
-                            width: 66px;
-                            height: 66px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            width: 63px;
+                            height: 63px;
                             font-size: 34px;          
                         }
                     }
