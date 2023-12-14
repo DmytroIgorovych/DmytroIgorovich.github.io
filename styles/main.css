@@ -327,7 +327,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
 @media (min-width: 841px) {
   header {
     min-height: auto;
-    background: url("../images/фото.png") top 95px right 60px/25% 70% no-repeat, url("../images/icons/Polygon 2-1.png") top right/45% 100% no-repeat content-box, #DF803E;
+    background: url("../images/фото.png") top 95px right 60px/25% 70% no-repeat content-box, url("../images/icons/Polygon 2-1.png") top right/45% 100% no-repeat content-box, #DF803E;
   }
   header .header-top {
     padding: 0px 60px 0 0;
@@ -336,12 +336,12 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     padding: 0 60px;
   }
   header .header-bottom h1 {
-    font-size: 55px;
+    font-size: 75px;
     padding-top: 50px;
     margin-bottom: 20px;
   }
   header .header-bottom p {
-    font-size: 25px;
+    font-size: 40px;
     max-width: 60%;
     margin-bottom: 35px;
     margin-top: 0;
@@ -368,9 +368,14 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
 @media (min-width: 1024px) {
   header {
     min-height: 675px;
+    background: url(../images/фото.png) top 125px right 60px/27% 70% no-repeat content-box, url(../images/icons/Polygon\ 2-1.png) top right/45% 100% no-repeat content-box, #DF803E;
   }
   header .header-top {
-    padding: 20px 80px 0 80px;
+    padding: 20px 60px 0 60px;
+  }
+  header .header-bottom button {
+    font-size: 18px;
+    padding: 15px 25px;
   }
   header .burger_btns a {
     font-size: 36px;
@@ -2036,9 +2041,47 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   .reviews .container .review {
     background-color: #DF803E;
     border-radius: 20px;
-    margin: 0 175px;
+    margin: 0;
     width: 80%;
     padding: 48px 71px 46px 80px;
+  }
+  .reviews .container .review h3 {
+    font-size: 25px;
+  }
+  .reviews .container .review h3 span {
+    font-size: 17px;
+  }
+  .reviews .container .review p {
+    font-size: 19px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews .container {
+    padding: 70px 60px 120px 60px;
+  }
+  .reviews .container .slick-prev {
+    margin-top: 0;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  .reviews .container .slick-prev:before {
+    width: 80px;
+    height: 80px;
+  }
+  .reviews .container .slick-next {
+    margin-top: 0;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+  }
+  .reviews .container .slick-next:before {
+    width: 80px;
+    height: 80px;
+  }
+  .reviews .container .review {
+    padding: 40px 50px 40px 50px;
+    margin: 0 100px;
   }
   .reviews .container .review h3 {
     font-size: 25px;
@@ -2289,13 +2332,19 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
+    flex-direction: row;
+  }
+  footer .container a {
+    align-self: center;
+    font-size: 25px;
   }
   footer .container a img {
     width: 100%;
   }
   footer .contacts-footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    row-gap: 15px;
   }
   footer .contacts-footer p {
     font-size: 14px;
@@ -2304,6 +2353,62 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   }
   footer .social {
     justify-content: center;
+    align-self: center;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  footer .social p {
+    font-size: 14px;
+  }
+  footer .social .icons {
+    display: flex;
+    justify-content: center;
+  }
+  footer .social .icon {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  footer .social .facebook {
+    margin-right: 10px;
+    background: url("../images/icons/facebook.svg") bottom center/24px 24px no-repeat content-box;
+  }
+  footer .social .instagram {
+    background: url("../images/icons/Icon Instagram.svg") bottom center/24px 24px no-repeat content-box;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    max-height: 291px;
+    background-color: #DF803E;
+  }
+  footer .container {
+    padding: 70px 60px 70px 60px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+  footer .container a {
+    font-size: 30px;
+  }
+  footer .container a img {
+    width: 100%;
+  }
+  footer .contacts-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  footer .contacts-footer p {
+    font-size: 14px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  footer .social {
     align-self: center;
   }
   footer .social p {
@@ -2331,17 +2436,26 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     padding: 112px 120px;
     flex-direction: row;
   }
+  footer .container a {
+    font-size: 40px;
+  }
   footer .contacts-footer {
     flex-direction: row;
+    -moz-column-gap: 80px;
+         column-gap: 80px;
   }
   footer .contacts-footer p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  footer .contacts-footer p span {
+    display: block;
+    height: 15px;
   }
   footer .social {
     position: relative;
   }
   footer .social p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media (min-width: 1680px) {

@@ -149,7 +149,66 @@
             display: flex;
             justify-content: space-between;
             vertical-align: middle;
+            flex-direction: row;
             a{
+                align-self: center;
+                font-size: 25px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .contacts-footer{
+            display: flex;
+            justify-content: center;
+            row-gap: 15px;
+            p{
+                font-size: 14px;
+                width: max-content;
+            }
+        }
+        .social{
+            justify-content: center;
+            align-self: center;
+            position: relative;
+            top: 0;
+            right: 0;
+            p{
+                font-size: 14px;
+            }
+            .icons{
+                display: flex;
+                justify-content: center;
+            }
+            .icon{
+                margin-top: 10px;
+                width: 24px;
+                height: 24px;
+            }
+            .facebook{
+                margin-right: 10px;
+                background: url('../images/icons/facebook.svg') bottom center / 24px 24px no-repeat content-box;
+            }
+            .instagram{
+                background: url('../images/icons/Icon\ Instagram.svg') bottom center/ 24px 24px no-repeat content-box;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer{
+        max-height: 291px;
+        background-color: $backgroundPrimary;
+        .container{
+            padding: 70px 60px 70px 60px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: middle;
+            a{
+                font-size: 30px;
                 img{
                     width: 100%;
                 }
@@ -158,13 +217,14 @@
         .contacts-footer{
             display: flex;
             justify-content: space-between;
+            flex-direction: row;
+            column-gap: 20px;
             p{
                 font-size: 14px;
                 width: max-content;
             }
         }
         .social{
-            justify-content: center;
             align-self: center;
             p{
                 font-size: 14px;
@@ -195,17 +255,25 @@
         .container{
             padding: 112px 120px;
             flex-direction: row;
+            a{
+                font-size: 40px;
+            }
         }
         .contacts-footer{
             flex-direction: row;
+            column-gap: 80px;
             p{
-                font-size: 18px;
+                font-size: 16px;
+                span{
+                    display: block;
+                    height: 15px;
+                }
             }
         }
         .social{
             position: relative;
             p{
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }

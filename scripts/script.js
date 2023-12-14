@@ -128,11 +128,22 @@ $('.ourTeam-slider').slick({
         slidesToShow: 1
       }
     }
-  ]
+    ]
 })
 
 $('.reviews-slider').slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            arrows: true,
+            centerMode: false,
+            centerPadding: '60px',
+            slidesToShow: 1
+          }
+        }
+        ]
 })

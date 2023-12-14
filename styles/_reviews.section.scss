@@ -164,7 +164,7 @@
             .review{
                 background-color: $backgroundPrimary;
                 border-radius: 20px;
-                margin: 0 175px;
+                margin: 0;
                 width: 80%;
                 padding: 48px 71px 46px 80px;
                 h3{
@@ -181,7 +181,52 @@
     }
 }
 
-
+@media (min-width:1024px) {
+    .reviews{
+        .container{
+            padding: 70px 60px 120px 60px;
+            .slick-prev {
+                margin-top: 0;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                &:before {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .slick-next {
+                margin-top: 0;
+                top: 50%;
+                width: 80px;
+                height: 80px;
+                &:before {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            b{
+                
+            }
+            h2{
+                
+            }
+            .review{
+                padding: 40px 50px 40px 50px;
+                margin: 0 100px;
+                h3{
+                    font-size: 25px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
+                p{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+}
 
 @media (min-width:1400px) {
     .reviews{
