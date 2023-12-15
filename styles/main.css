@@ -614,12 +614,20 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
 .overlay .content {
   background-color: #fff;
   border-radius: 50px;
-  max-width: 550px;
+  max-width: 400px;
   width: 90%;
   min-height: 300px;
 }
+.overlay .content p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 120px auto;
+  max-width: 100%;
+}
 .overlay .content form {
-  margin: 60px 30px;
+  padding: 70px 40px;
 }
 .overlay .content h3 {
   font-size: 20px;
@@ -628,7 +636,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
 .overlay .content input {
   padding: 0;
   padding-bottom: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   border: none;
   border-bottom: 2px solid black;
   width: 100%;
@@ -645,7 +653,7 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   color: black;
 }
 
@@ -665,13 +673,26 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     margin: 0 auto;
   }
   .overlay .content {
-    width: 50%;
+    width: 90%;
+    max-width: 440px;
+  }
+  .overlay .content form {
+    margin: 0;
+    padding: 80px 40px;
+  }
+  .overlay .content p {
+    font-size: 23px;
   }
   .overlay .content h3 {
-    font-size: 28px;
+    font-size: 23px;
   }
   .overlay .content input {
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .overlay .content #submit {
+    font-size: 16px;
+    margin-top: 30px;
   }
 }
 @media (min-width: 841px) {
@@ -704,6 +725,28 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
     font-size: 20px;
     font-family: BookmanOldStyle;
   }
+  .overlay .content {
+    width: 47%;
+    max-width: 550px;
+  }
+  .overlay .content form {
+    margin: 0;
+    padding: 70px 25px;
+  }
+  .overlay .content p {
+    font-size: 26px;
+  }
+  .overlay .content h3 {
+    font-size: 26px;
+  }
+  .overlay .content input {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .overlay .content #submit {
+    font-size: 18px;
+    margin-top: 40px;
+  }
 }
 @media (min-width: 990px) {
   .direction-works .container b {
@@ -716,6 +759,27 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   }
   .direction-works .container .found-list ol {
     min-width: 50%;
+  }
+  .overlay .content {
+    width: 42%;
+  }
+  .overlay .content form {
+    margin: 0;
+    padding: 80px 28px;
+  }
+  .overlay .content p {
+    font-size: 28px;
+  }
+  .overlay .content h3 {
+    font-size: 28px;
+  }
+  .overlay .content input {
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .overlay .content #submit {
+    font-size: 20px;
+    margin-top: 45px;
   }
 }
 @media (min-width: 1440px) {
@@ -767,6 +831,50 @@ header .burger_btns + nav a, header .burger_btns.active + nav a {
   }
   .direction-works .container button {
     font-size: 26px;
+  }
+  .overlay .content {
+    width: 32%;
+  }
+  .overlay .content form {
+    margin: 0;
+    padding: 100px 38px;
+  }
+  .overlay .content p {
+    font-size: 30px;
+  }
+  .overlay .content h3 {
+    font-size: 30px;
+  }
+  .overlay .content input {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .overlay .content #submit {
+    font-size: 22px;
+    margin-top: 55px;
+  }
+}
+@media (min-width: 1680px) {
+  .overlay .content {
+    width: 30%;
+  }
+  .overlay .content form {
+    margin: 0;
+    padding: 120px 43px;
+  }
+  .overlay .content p {
+    font-size: 34px;
+  }
+  .overlay .content h3 {
+    font-size: 34px;
+  }
+  .overlay .content input {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+  .overlay .content #submit {
+    font-size: 26px;
+    margin-top: 64px;
   }
 }
 .about-us {
