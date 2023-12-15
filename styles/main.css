@@ -28,14 +28,14 @@
   height: 48px;
   border: none;
   background: url("../images/icons/burger.svg") center right no-repeat content-box;
-  margin: 16px 0 8px 0;
+  margin: 16px 20px 8px 0;
 }
 .burger_btns.active {
   justify-content: space-between;
   border-bottom: 1px solid #DF803E;
   background-color: white;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 }
 .burger_btns.active .open-menu {
@@ -45,6 +45,7 @@
 .burger_btns.active .logo, .burger_btns.active + nav {
   display: block;
   background-color: white;
+  z-index: 2;
 }
 .burger_btns.active .close-menu a:first-child,
 .burger_btns.active .logo a:first-child, .burger_btns.active + nav a:first-child {
