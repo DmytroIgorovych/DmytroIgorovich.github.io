@@ -58,23 +58,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const consultationPopup = new Popup('btn-consultation', 'get-consultation');
 
     class formRequest {
-        constructor(form) {
-            this.form = form;
-
-            this.form.addEventListener('submit', (e) => {
+        constructor(formArray) {
+            this.formArray = formArray;
+            
+            this.formArray.forEach(element => element.addEventListener('submit', (e) => {
+                
                 e.preventDefault();
-                this.submit();
-            })
+                this.submit(element);
+            }));
         }
 
-        submit() {
+        submit(form) {
 
             let valid = true;
             
-            new Array().forEach.call(this.form, (field) => {
+            new Array().forEach.call(form, (field) => {
                 if (field.type ==='text') {
                     if (field.value === ''){
                         valid=false;
+                        console.log(valid);
                     }
                 }
             })
@@ -84,14 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     .then(res=> res.json())
                     .then(data=> {
                         console.log(data);
-                        this.form.outerHTML = `<p>${data.message}</p>`
+                        form.outerHTML = `<p>${data.message}</p>`
                     })
             } else {
                 console.log('error');
             }
         }
     }
-    new formRequest(document.querySelector('form'))
+    new formRequest(document.querySelectorAll('form'))
 })
 
 
