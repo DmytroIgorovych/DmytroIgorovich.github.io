@@ -1,5 +1,5 @@
+// import { readFileSync, writeFileSync } from './node_modules/fs';
 document.addEventListener('DOMContentLoaded', function() {
-
     
     
     const burger_btns = document.querySelector('.burger_btns');
@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (field.type ==='text') {
                     if (field.value === ''){
                         valid=false;
-                        console.log(valid);
                     }
                 }
             })
@@ -85,11 +84,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 fetch('./scripts/server.json')
                     .then(res=> res.json())
                     .then(data=> {
-                        console.log(data);
-                        form.outerHTML = `<p>${data.message}</p>`
-                    })
+                        form.outerHTML = `<p>${data.message}</p>`;
+                });
+                
+                // const fs = require('fs');
+                // let rawdata = readFileSync('clientsData.json'); // Читаем файл. Название файла поменять на свое
+                // let parseddata= JSON.parse(rawdata); // парсим и получаем JS объект из строки
+                // // Здесь совершаем операции с объектом JS
+                // parseddata.push({
+                //     name: form[0].value,
+                //     tel: form[1].value
+                // });
+                // // Превращаем обратно в строку
+                // let data = JSON.stringify(parseddata);
+                // // Пишем в файл
+                // writeFileSync('my.json', data);
+
+                // fetch('./scripts/clientsData.json', {
+                //     method: "POST",
+                //     body: {
+                //         name: form[0].value,
+                //         tel: form[1].value
+                //     }
+                // })
+                    // .then(res => res.json())
+                    // .then(data => {
+                    //     console.log(data);
+                    //     let formData = {
+                    //         name: form[0].value,
+                    //         tel: form[1].value
+                    //     };
+                    //     console.log(formData);
+                    // })
             } else {
-                console.log('error');
+                let spanErrorMessage = document.querySelectorAll(".errorMessage");
+                spanErrorMessage.forEach(elem => elem.style.display = "block")
             }
         }
     }

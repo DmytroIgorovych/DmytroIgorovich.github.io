@@ -40,11 +40,12 @@
             <button id="btn-consultation" class="btn btn-popup">Отримати консультацію</button>
             <div class="overlay" id="get-consultation">
                 <div class="content">
-                    <form>
+                    <form action="./scripts/clientsData.php" method="POST">
                         <h3>Отримати консультацію</h3>
                         <br>
-                        <input type="text" placeholder="Ім'я" pattern="/[a-zA-Zа-яА-Я\'\-]+/g"><br>
-                        <input type="text" placeholder="Номер тел." pattern="^\d{3}\d{3}\d{2}\d{2}$"><br>
+                        <input name="name" type="text" placeholder="Ім'я" required><br>
+                        <input name="phone" type="text" placeholder="Номер тел." pattern="^\d{3}\d{3}\d{2}\d{2}$"><br>
+                        <span class="errorMessage" style="display: none; color: red;">Перевірте введені дані</span>
                         <input id="submit" type="submit" value="Надіслати">
                     </form>
                 </div>
@@ -92,11 +93,12 @@
         </div>
         <div class="overlay" id="request">
             <div class="content">
-                <form>
+                <form action="./scripts/server.json" method="post">
                     <h3>Залишити заявку</h3>
                     <br>
-                    <input type="text" placeholder="Ім'я"><br>
-                    <input type="text" placeholder="Номер тел." pattern="\d{10}"><br>
+                    <input name="name" type="text" placeholder="Ім'я"><br>
+                    <input name="tel" type="text" placeholder="Номер тел." pattern="\d{10}"><br>
+                    <span class="errorMessage" style="display: none; color: red;">Перевірте введені дані</span>
                     <input id="submit" type="submit" value="Надіслати">
                 </form>
             </div>
@@ -296,6 +298,6 @@
     </footer>
     <script src="./scripts/jquery.min.js"></script>
     <script src="./scripts/slick.min.js"></script>
-    <script src="./scripts/script.js"></script> 
+    <script type="module" src="./scripts/script.js"></script>
 </body>
 </html>
